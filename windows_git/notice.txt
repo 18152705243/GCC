@@ -1,3 +1,4 @@
 1.if gcc use windows kit and include windows.h,some faults will come up if don't add the linker message when compile.
 solution:add -static-libgcc -lgdi32 in command
 eg:g++ -o main main.cpp -static-libgcc -lgdi32
+or:g++ -o main main.cpp -lgdi32
